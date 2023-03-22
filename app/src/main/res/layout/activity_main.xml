@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -50,10 +56,48 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Quando um dispositivo vai além e começa a facilitar vidas, o Android está por trás disso. É por isso que seu GPS evita o trânsito, seu relógio pode enviar mensagens de texto e o Assistente pode responder a perguntas. É o sistema operacional de 2,5 bilhões de dispositivos ativos. Todos eles têm a tecnologia Android: de smartphones 5G a tablets incríveis. O Android é aberto para todos: desenvolvedores, designers e fabricantes de dispositivos. Isso significa que as pessoas podem fazer experimentos, imaginar e criar coisas nunca vistas antes."
+        android:text='Quando um dispositivo vai além e começa a facilitar vidas, o Android está por trás disso. É por isso que seu GPS evita o trânsito, seu relógio pode enviar mensagens de texto e o Assistente pode responder a perguntas. É o sistema operacional de 2,5 bilhões de dispositivos ativos. Todos eles têm a tecnologia Android: de smartphones 5G a tablets incríveis. O Android é aberto para todos: desenvolvedores, designers e fabricantes de dispositivos. Isso significa que as pessoas podem fazer experimentos, imaginar e criar coisas nunca vistas antes. Com o Android, você tem segurança imediata e que nunca deixa de funcionar. O Google Play Protect verifica todos os apps, o software recebe atualizações de segurança periódicas, e a plataforma está em constante melhoria. É como ter um vigia que nunca faz pausas, não dorme nem tira férias. No Android, você decide quando e se os dados serão compartilhados, como sua "Atividade na Web e de apps" ou o Histórico de localização. Se um app acessar sua localização quando não estiver sendo utilizado, você receberá uma notificação. Se você quiser mudar as permissões em algum momento, todas as configurações de privacidade estarão em um único lugar. Isso é privacidade, com você no controle.'
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Daniel Penelva"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
